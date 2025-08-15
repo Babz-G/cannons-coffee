@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <img
+            src="https://assets.codepen.io/296057/logo-nav.png"
+            alt="Cannons Coffee Logo, Beans of Joy"
+          />
+          <h1>Cannons Coffee</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="latte.html" target="_blank">Coffee</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/gleanerscafe/?hl=en"
+                target="_blank"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a href="contact.html" target="_blank">Contact</a>
+            </li>
+            <li>
+              <a href="login.html" target="_blank">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <form>
+          <div class="form-container">
+            <div class="heading">
+              <h1>Contact Cannons Coffee</h1>
+
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Doe"
+                required
+              />
+
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+              />
+
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="555-555-5555"
+                required
+              />
+
+              <label for="comments">Any Comments?:</label><br />
+              <textarea
+                id="comments"
+                name="comments"
+                rows="3"
+                cols="30"
+              ></textarea>
+
+              <label for="flavor"
+                >Please choose a favorite coffee flavor below:</label
+              >
+              <select id="flavor" name="flavor" required>
+                <option value="">--Choose one--</option>
+                <option value="Americano">Americano</option>
+                <option value="Latte">Latte</option>
+                <option value="Cold Brew">Cold Brew</option>
+              </select>
+
+              <fieldset>
+                <legend>Interested In?:</legend>
+
+                <input
+                  type="radio"
+                  id="coffee"
+                  name="interest"
+                  value="Purchasing Coffee"
+                />
+                <label for="coffee">Purchasing Coffee</label>
+                <input
+                  type="radio"
+                  id="work"
+                  name="interest"
+                  value="Seeking Employment"
+                />
+                <label for="work">Seeking Employment</label>
+              </fieldset>
+
+              <button class="solid" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="MessageContainer"></div>
+      </main>
+    </div>
+    <footer>
+      <img
+        src=" https://assets.codepen.io/296057/logo-footer.png"
+        alt="Cannons Coffee, Beans of Joy! Est. 2014"
+      />
+      <p>
+        &copy; 2024 Springdale Farmer's Market Association. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/custom-contact.js"></script>
+  </body>
+</html>
